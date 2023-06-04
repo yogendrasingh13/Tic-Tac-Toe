@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    padding: 0 16px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: 'Dancing Script', cursive;
+}
+
+.gamecontainer {
+    background-color: darkgrey;
+     display: flex;
+     justify-content: center;
+     margin: 20px;
+}
+
+.container {
+    display: grid;
+    margin: 12px;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3, 10vw);
+    
+}
+
+.box {
+    
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color:rgb(205, 204, 204);
+}
+
+.gameinfo {
+    padding: 0 40px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.imgbox img {
+    display: none;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
