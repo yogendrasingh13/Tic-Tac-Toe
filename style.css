@@ -26,13 +26,16 @@ nav ul {
      display: flex;
      justify-content: center;
      margin: 20px;
+     height: 87vh;
+     
 }
 
 .container {
     display: grid;
-    margin: 12px;
+    margin-top: 90px;
     grid-template-rows: repeat(3,10vw);
     grid-template-columns: repeat(3, 10vw);
+    position: relative;
     
 }
 
@@ -49,13 +52,21 @@ nav ul {
     background-color:rgb(205, 204, 204);
 }
 
+.info {
+    font-size: 35px;
+}
 .gameinfo {
-    padding: 0 40px;
+    margin-top: 150px;
+    margin-left: 40px;
     font-family: 'Indie Flower', cursive;
+}
+.gameinfo h1 {
+    font-size: 2.5rem;
 }
 
 .imgbox img {
-    display: none;
+    width: 0;
+    transition: width 1s ease-in-out;
 }
 
 .br-0{
@@ -72,4 +83,41 @@ nav ul {
 
 .bb-0 {
     border-bottom: 0;
+}
+
+#reset {
+    margin: 0 23px;
+    padding: 6px 14px;
+    background-color: rgb(91, 131, 123);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+}
+.line {
+    background-color: black;
+    height: 3px;
+    width: 0vw;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    background-color:firebrick;
+}
+
+@media screen and (max-width: 950px) {
+    .gamecontainer {
+        flex-wrap: wrap;
+    }
+    .gameinfo {
+        margin-top: 30px;
+    }
+    .gameinfo h1 {
+        font-size: 1.5rem;
+    }
+    .container {
+        display: grid;
+        margin-top: 30px;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3, 20vw);
+        
+    }
 }
